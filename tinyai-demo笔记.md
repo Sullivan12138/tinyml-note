@@ -1,0 +1,4 @@
+Arduino_Tensorflow库是从github上下载得到，地址为https://github.com/tensorflow/tflite-micro-arduino-examples
+下载好了以后改成了这个名字
+原本是要在Arduino IDE上下载这个库，但是Arduino IDE上的库版本太老，所以从github下载并改名。
+这个库相比tinyml书上的库修改了很多。在跑person_detection这个demo的时候，发现了奇怪的bug，推断的分数一直是同一个数字，猜测是只用了一张固有的图片去推断而没有从摄像头去拿数据，但是看代码又不是这样。现在还不知道原因是啥。
